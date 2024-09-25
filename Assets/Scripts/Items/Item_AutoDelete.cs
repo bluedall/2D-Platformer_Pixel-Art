@@ -6,9 +6,18 @@ using UnityEngine;
 /// </summary>
 public class Item_AutoDelete : MonoBehaviour
 {
+    private bool isDestroyed = false;
     public IEnumerator DeleteWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        DestroyImmediate(gameObject);
+        if (!isDestroyed)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnDestroy()
+    {
+        isDestroyed = true;
+        print("OnDestroy Method");
     }
 }

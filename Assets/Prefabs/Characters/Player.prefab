@@ -131,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 6286425338555812394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0, z: 0}
+  m_LocalPosition: {x: -2.03, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -253,11 +253,11 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3316774187315349861}
   moveSpeed: 2.5
   jumpForce: 220
-  OverlapCircle_Position: {x: 0, y: 0.4}
+  OverlapCircle_Position: {x: 0, y: 0.35}
   OverlapCircle_LayerMask:
     serializedVersion: 2
     m_Bits: 8
-  Radus: 0.62
+  Radus: 0.58
 --- !u!114 &825379020174761677
 MonoBehaviour:
   m_ObjectHideFlags: 0

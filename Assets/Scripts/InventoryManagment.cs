@@ -33,7 +33,7 @@ public class InventoryManagment : MonoBehaviour
     [SerializeField] TMP_Text Text_CherryCount;
     [SerializeField] TMP_Text Text_BannanaCount;
 
-    public void AddItem(string tag, GameObject gameobject_Item)
+    public void Inventory_AddItem(string tag, GameObject gameobject_Item)
     {
         switch (tag)
         {
