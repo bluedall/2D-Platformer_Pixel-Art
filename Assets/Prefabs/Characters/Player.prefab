@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 8628812909262183123}
   - component: {fileID: 2940614247871429246}
   - component: {fileID: 825379020174761677}
+  - component: {fileID: 1836237595112558874}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -251,13 +252,14 @@ MonoBehaviour:
   Rigidbody: {fileID: 8628812909262183123}
   animator: {fileID: 5726907910414807522}
   spriteRenderer: {fileID: 3316774187315349861}
+  animator_Optimazation_HashCode: {fileID: 1836237595112558874}
   moveSpeed: 2.5
   jumpForce: 220
   OverlapCircle_Position: {x: 0, y: 0.35}
   OverlapCircle_LayerMask:
     serializedVersion: 2
     m_Bits: 8
-  Radus: 0.58
+  Radus: 0.56
 --- !u!114 &825379020174761677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,3 +272,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ace9c30ef55173d43b39875c5cf11a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1836237595112558874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999517678998061578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad3bbe39debcd549a4c2154ffd63ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID_Jump: 0
+  ID_IsRuning: 0

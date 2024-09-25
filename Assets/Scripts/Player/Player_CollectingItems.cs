@@ -8,7 +8,7 @@ public class Player_CollectingItems : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        InventoryManagment.Instance.Inventory_AddItem(collision.transform.tag, collision.gameObject);
+        InventorySystem.Instance.AddItem_to_Inventory(collision.transform.tag, collision.gameObject);
 
         //Play Particle 
         //Play Sound Effect

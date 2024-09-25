@@ -6,10 +6,10 @@ using static UnityEditor.Progress;
 /// <summary>
 /// This class is responsible for managing the Inventory System and Add or delete Items.
 /// </summary>
-public class InventoryManagment : MonoBehaviour
+public class InventorySystem : MonoBehaviour
 {
     #region Singletoon
-    public static InventoryManagment Instance;
+    public static InventorySystem Instance;
     private void Awake() // If there is an instance, and it's not me, delete myself.
     {
         if (Instance != null && Instance != this)
@@ -33,7 +33,7 @@ public class InventoryManagment : MonoBehaviour
     [SerializeField] TMP_Text Text_CherryCount;
     [SerializeField] TMP_Text Text_BannanaCount;
 
-    public void Inventory_AddItem(string tag, GameObject gameobject_Item)
+    public void AddItem_to_Inventory(string tag, GameObject gameobject_Item)// when the player collide with Items this method called to Save Items in Inventory.
     {
         switch (tag)
         {
@@ -57,7 +57,7 @@ public class InventoryManagment : MonoBehaviour
                 Destroy(gameobject_Item);
                 print("  CherryCount++");
                 break;
-                //------------------------------------
+            //------------------------------------
         }
     }
 

@@ -12,6 +12,7 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] Rigidbody2D Rigidbody;
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] AnimatorOptimazation_HashCode animator_Optimazation_HashCode;
     void FixedUpdate()
     {
         Movement();
@@ -42,7 +43,7 @@ public class Player_Movement : MonoBehaviour
 
         if (movement.magnitude > 0)
         {
-            animator.SetBool("IsRuning", true);
+            animator.SetBool(animator_Optimazation_HashCode.ID_IsRuning, true);
             if (horizontalInput > 0)
             {
                 spriteRenderer.flipX = false;
@@ -54,7 +55,7 @@ public class Player_Movement : MonoBehaviour
         }
         else
         {
-            animator.SetBool("IsRuning", false);
+            animator.SetBool(animator_Optimazation_HashCode.ID_IsRuning, false);
         }
     }
     #endregion
@@ -92,7 +93,7 @@ public class Player_Movement : MonoBehaviour
     {
         if (IsOnGround == true)
         {
-            animator.SetBool("Jump", false);
+            animator.SetBool(animator_Optimazation_HashCode.ID_Jump, false);
         }
         else
         {
